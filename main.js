@@ -32,13 +32,12 @@ const newList = items.filter(function(item){
 console.log(newList);
 
 
-
-
-
-
-
 // 3. Show me how find the item with a "GBP" currency code and print its name and price. Please console.log the one you find.
 
+function isEuro(item) {
+    return item.currency_code === "GBP";
+}
+console.log(items.find(isEuro));
 
 
 
