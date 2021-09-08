@@ -20,14 +20,16 @@ const totalPrices = function(acc, val) {
 
 const answerIs = (prices.reduce(totalPrices)/prices.length);
 
-console.log(answerIs);
-
-
-
-
+console.log(answerIs.toFixed(2));
 
 
 // 2.Show me how to get an array of items that cost between $14.00 and $18.00 USD. Please console.log the answer.
+
+
+const newList = items.filter(function(item){
+    return item.price < 18 && item.price >= 14; 
+});
+console.log(newList);
 
 
 
