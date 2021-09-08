@@ -40,6 +40,10 @@ function isEuro(item) {
 console.log(items.find(isEuro));
 
 
-
-
 // 4. Show me how to find which items are made of wood. Please console.log the ones you find.
+
+const areWood = items.filter(function(element){
+    return element.materials.includes("wood");
+});
+console.log(areWood);
+
