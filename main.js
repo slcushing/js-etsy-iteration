@@ -30,9 +30,11 @@ const newList = items.filter(function(item){
     return item.price < 18 && item.price >= 14; 
 });
 
-newList.forEach(function(item){
-    console.log(`Items that cost between $14.00 USD and $18.00 USD: ${item.title}`);
-});
+console.log("Items that cost between $14.00 USD and $18.00 USD:", newList);
+
+// newList.forEach(function(item){
+//     console.log(`Items that cost between $14.00 USD and $18.00 USD: ${item}`);
+// });
 
 
 // 3. Show me how find the item with a "GBP" currency code and print its name and price. Please console.log the one you find.
@@ -69,11 +71,12 @@ areWood.forEach(function(item){
 const eightPlus = items.filter(function(item) {
     return item.materials.length > 8;
 });
+    // console.dir(eightPlus);
+
 eightPlus.forEach(function(item){
-    console.log()
+    console.log(`${item.title} has ${item.materials.length}: ${item.materials}`);
 })
 
-console.log(eightPlus);
 
 
 //6. Show me how to calculate how many items were made by their sellers. Please console.log your answer.
